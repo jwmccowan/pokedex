@@ -1,5 +1,11 @@
 import React from 'react';
 
-const App = () => <div>App</div>;
+import PokemonList from './PokemonList';
+
+const App = () => (
+  <div className="ui container">
+    <PokemonList />
+  </div>
+);
 
 export default App;
