@@ -1,0 +1,6 @@
+.search-bar {
+  position: sticky !important;
+  background-color: white !important;
+  z-index: 1;
+  top: 0px;
+}
