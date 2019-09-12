@@ -1,10 +1,10 @@
 import React from 'react';
 
-import PokemonList from './PokemonList';
+import PokemonFilterList from './PokemonFilterList';
 
 const App = () => (
   <div className="ui container">
-    <PokemonList />
+    <PokemonFilterList />
   </div>
 );
 
