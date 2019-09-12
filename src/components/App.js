@@ -1,11 +1,11 @@
 import React from 'react';
 
-class App extends React.Component {
-  render() {
-    return(
-      <div>App</div>
-    );
-  }
-}
+import PokemonFilterList from './PokemonFilterList';
+
+const App = () => (
+  <div className="ui container">
+    <PokemonFilterList />
+  </div>
+);
 
 export default App;

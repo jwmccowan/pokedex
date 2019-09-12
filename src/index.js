@@ -9,12 +9,12 @@ import reducers from './reducers';
 
 const store = createStore(
   reducers,
-  applyMiddleware(thunk)
+  applyMiddleware(thunk),
 );
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.querySelector('#root')
-)
+  document.querySelector('#root'),
+);
