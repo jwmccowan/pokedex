@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { fetchPokemonsAction } from '../actions';
+import PokemonItem from './PokemonItem';
 
 class PokemonList extends React.Component {
   componentDidMount() {
@@ -13,18 +14,12 @@ class PokemonList extends React.Component {
   renderList() {
     const { pokemons } = this.props;
     return pokemons.map((pokemon) => (
-      <div key={pokemon.id}>
-        <img
-          alt={pokemon.name}
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-        />
-        {pokemon.name}
-      </div>
+      <PokemonItem pokemon={pokemon} />
     ));
   }
 
   render() {
-    return <div>{this.renderList()}</div>;
+    return <div className="ui relaxed divided list">{this.renderList()}</div>;
   }
 }
 
