@@ -14,7 +14,9 @@ class PokemonList extends React.Component {
   renderList() {
     const { pokemons } = this.props;
     return pokemons.map((pokemon) => (
-      <PokemonItem pokemon={pokemon} />
+      pokemon.filtered
+        ? null
+        : <PokemonItem key={pokemon.id} pokemon={pokemon} />
     ));
   }
 
