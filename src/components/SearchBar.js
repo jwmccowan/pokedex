@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './SearchBar.css';
+
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +20,7 @@ class SearchBar extends React.Component {
   render() {
     const { term } = this.state;
     return (
-      <div className="ui segment">
+      <div className="ui segment search-bar">
         <form
           className="ui form"
           onSubmit={(e) => e.preventDefault()}
