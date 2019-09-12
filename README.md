@@ -1,3 +1,5 @@
+###Pokedex
+
 I saw a pokemon API online and wanted to display its contents!
 A simple little react web app that displays the original 150 and lets you see some information about them.
 
