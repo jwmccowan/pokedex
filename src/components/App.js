@@ -1,11 +1,11 @@
 import React from 'react';
 
-class App extends React.Component {
-  render() {
-    return(
-      <div>App</div>
-    );
-  }
-}
+import PokemonList from './PokemonList';
+
+const App = () => (
+  <div className="ui container">
+    <PokemonList />
+  </div>
+);
 
 export default App;
